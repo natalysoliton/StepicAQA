@@ -1,11 +1,10 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-import time
-import math
 
-a = 10
-b = 20
+def test_input_text(expected_result, actual_result):
 
-sum = a + b
+    assert expected_result == actual_result, \
+    f"Expected {expected_result}, got {actual_result}"
 
-print("sum:", sum)
+    expected_result = 11
+    actual_result = 11
+
+
